@@ -1,1 +1,217 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coberturas | Radar Rosarino</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f5f0;
+      color: #202020;
+    }
+
+    header {
+      background: #171717;
+      color: white;
+      padding: 28px 7%;
+    }
+
+    .logo {
+      color: white;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: #e94b35;
+    }
+
+    header p {
+      margin-bottom: 0;
+      color: #ddd;
+    }
+
+    nav {
+      background: white;
+      padding: 15px 7%;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      color: #222;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 22px;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section-label {
+      color: #e94b35;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 10px 0;
+    }
+
+    .intro {
+      color: #555;
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .article-card {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 24px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 12px #0000000d;
+    }
+
+    .article-card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .category {
+      color: #e94b35;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-size: 25px;
+      line-height: 1.25;
+    }
+
+    h2 a {
+      color: #202020;
+      text-decoration: none;
+    }
+
+    h2 a:hover {
+      color: #e94b35;
+    }
+
+    .description {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .read-more {
+      color: #e94b35;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 25px;
+      text-align: center;
+      background: #171717;
+      color: white;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      h1 {
+        font-size: 34px;
+      }
+
+      .article-card {
+        grid-template-columns: 1fr;
+      }
+
+      .article-card img {
+        height: 220px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a class="logo" href="../index.html">RADAR <span>ROSARINO</span></a>
+    <p>Las historias de nuestra ciudad, más cerca.</p>
+  </header>
+
+  <nav>
+    <a href="../index.html">INICIO</a>
+    <a href="coberturas.html">COBERTURAS</a>
+    <a href="../quienes-somos.html">QUIÉNES SOMOS</a>
+  </nav>
+
+  <main>
+    <span class="section-label">RADAR ROSARINO · PERIODISMO</span>
+    <h1>Coberturas</h1>
+    <p class="intro">
+      Eventos, encuentros e historias que merecen ser contadas.
+      Conocé nuestras coberturas en Rosario y la región.
+    </p>
+
+    <article class="article-card">
+      <img
+        src="../notas/oajnu.jpg"
+        alt="Jóvenes participando de un Modelo de Naciones Unidas"
+        onerror="this.style.display='none'"
+      >
+
+      <div>
+        <span class="category">EDUCACIÓN · COBERTURAS</span>
+        <h2>
+          <a href="../notas/jovenes-embajadores.html">
+            Jóvenes embajadores: la propuesta de OAJNU presente en Rosario
+          </a>
+        </h2>
+
+        <p class="description">
+          Estudiantes secundarios asumieron el rol de diplomáticos en un
+          Modelo de Naciones Unidas realizado en Rosario. Una experiencia
+          de debate, investigación y participación juvenil.
+        </p>
+
+        <a class="read-more" href="../notas/jovenes-embajadores.html">
+          Leer la nota →
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    © Radar Rosarino · Periodismo local
+  </footer>
+
+</body>
+</html>
+
