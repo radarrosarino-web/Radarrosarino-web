@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ne:RD: el festival que cruzó arte digital e inteligencia artificial en Rosario | Radar Rosarino</title>
+
+  <meta name="description" content="Rosario recibió una nueva edición de Ne:RD, el festival que reúne arte digital, inteligencia artificial, música electrónica y experiencias interactivas.">
+
+  <meta name="theme-color" content="#f8f6f0">
+
+  <style>
+    :root {
+      --fondo: #f8f6f0;
+      --papel: #fffefa;
+      --texto: #242720;
+      --secundario: #696b61;
+      --verde: #354b3b;
+      --verde-claro: #e8ede5;
+      --linea: #deded4;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--fondo);
+      color: var(--texto);
+      font-family: var(--sans);
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      background: var(--papel);
+      border-bottom: 1px solid var(--linea);
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 23px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand-logo {
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 21px;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+
+    .brand-logo span {
+      display: block;
+      color: var(--verde);
+      letter-spacing: 3.5px;
+      font-size: 11px;
+      margin-top: 5px;
+    }
+
+    .main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px 23px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-nav a {
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #4f514a;
+    }
+
+    .main-nav a:hover {
+      color: var(--verde);
+      text-decoration: underline;
+    }
+
+    .main-content {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 66px 28px 90px;
+    }
+
+    .article-header {
+      max-width: 860px;
+      margin: 0 auto 38px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 23px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--verde);
+      color: white;
+      border-radius: 2px;
+      padding: 5px 10px;
+      font-size: 10px;
+      letter-spacing: 2px;
+      font-weight: 800;
+    }
+
+    .edition {
+      color: var(--secundario);
+      font-size: 11px;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+    }
+
+    .article-title {
+      max-width: 820px;
+      margin: 0 0 23px;
+      font-family: var(--serif);
+      font-size: clamp(38px, 5.5vw, 68px);
+      line-height: 1.07;
+      font-weight: 500;
+      letter-spacing: -2px;
+    }
+
+    .article-lead {
+      max-width: 760px;
+      color: #55584e;
+      font-family: var(--serif);
+      font-size: clamp(18px, 2.2vw, 22px);
+      line-height: 1.65;
+      margin: 0 0 28px;
+    }
+
+    .meta-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      align-items: center;
+      padding-top: 18px;
+      border-top: 1px solid var(--linea);
+      color: var(--secundario);
+      font-size: 12px;
+    }
+
+    .meta-info strong {
+      color: var(--texto);
+    }
+
+    .article-img-box {
+      margin: 0 auto 55px;
+      max-width: 1060px;
+    }
+
+    .photo-placeholder {
+      min-height: 260px;
+      aspect-ratio: 16 / 7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 25px;
+      text-align: center;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 100%,
+          rgba(199, 203, 177, .65), transparent 55%),
+        linear-gradient(135deg, #e4e5d8, #c8d1c0 48%, #e9e4d5);
+      color: #465344;
+    }
+
+    .photo-placeholder p {
+      margin: 0;
+    }
+
+    .photo-placeholder p:first-child {
+      font-family: var(--serif);
+      font-size: clamp(21px, 3vw, 32px);
+      font-style: italic;
+    }
+
+    .photo-placeholder p:last-child {
+      margin-top: 8px;
+      font-size: 12px;
+    }
+
+    .article-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+      object-fit: cover;
+    }
+
+    .article-img-caption {
+      color: var(--secundario);
+      font-size: 11px;
+      padding-top: 10px;
+      margin: 0;
+    }
+
+    .article-body {
+      max-width: 710px;
+      margin: 0 auto;
+      font-family: var(--serif);
+      font-size: 18px;
+      line-height: 1.95;
+    }
+
+    .article-body > p {
+      margin: 0 0 27px;
+    }
+
+    .article-body h2 {
+      font-family: var(--sans);
+      font-size: 23px;
+      line-height: 1.3;
+      letter-spacing: -.5px;
+      margin: 53px 0 19px;
+      padding-top: 18px;
+      position: relative;
+    }
+
+    .article-body h2::before {
+      content: "";
+      display: block;
+      width: 38px;
+      height: 3px;
+      background: var(--verde);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .agenda-card {
+      margin: 48px 0 15px;
+      padding: 27px 30px;
+      background: var(--verde-claro);
+      border-left: 4px solid var(--verde);
+      font-family: var(--sans);
+    }
+
+    .agenda-card h2 {
+      margin: 0 0 18px;
+      padding: 0;
+      font-size: 17px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .agenda-card h2::before {
+      display: none;
+    }
+
+    .agenda-card p {
+      font-size: 14px;
+      line-height: 1.7;
+      margin: 9px 0;
+    }
+
+    .agenda-card strong {
+      color: var(--verde);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 38px;
+      color: var(--verde);
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .site-footer {
+      background: #252c25;
+      color: #f8f6f0;
+      padding: 28px;
+    }
+
+    .footer-bottom {
+      max-width: 1180px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 760px) {
+      .header-inner {
+        padding: 19px 20px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 17px;
+      }
+
+      .main-nav ul {
+        justify-content: flex-start;
+        gap: 12px 18px;
+      }
+
+      .main-content {
+        padding: 42px 20px 60px;
+      }
+
+      .article-title {
+        letter-spacing: -1.2px;
+      }
+
+      .photo-placeholder {
+        aspect-ratio: 4 / 3;
+        min-height: 220px;
+      }
+
+      .article-body {
+        font-size: 17px;
+        line-height: 1.85;
+      }
+
+      .article-body h2 {
+        font-size: 21px;
+        margin-top: 40px;
+      }
+
+      .agenda-card {
+        padding: 22px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="brand-logo">
+        RADAR
+        <span>ROSARINO</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../secciones/agenda.html">Agenda</a></li>
+          <li><a href="../secciones/coberturas.html">Reseñas y Coberturas</a></li>
+          <li><a href="../secciones/deportes.html">Deportes</a></li>
+          <li><a href="../quienes-somos.html">Quiénes Somos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <article>
+
+      <header class="article-header">
+        <div class="eyebrow">
+          <span class="badge">CULTURA</span>
+          <span class="edition">Rosario · Arte digital y tecnología</span>
+        </div>
+
+        <h1 class="article-title">
+          Ne:RD: el festival que cruzó arte digital e inteligencia artificial en Rosario
+        </h1>
+
+        <p class="article-lead">
+          Instalaciones interactivas, performances audiovisuales, música electrónica y experiencias inmersivas formaron parte de la tercera edición de Ne:RD, el festival que convirtió a Rosario en un espacio de encuentro para la experimentación artística y tecnológica.
+        </p>
+
+        <div class="meta-info">
+          <span>Por <strong>Victoria Morelli</strong></span>
+          <span aria-hidden="true">·</span>
+          <time datetime="2026-10-20">20 de octubre de 2026</time>
+        </div>
+      </header>
+
+      <figure class="article-img-box">
+        <!-- Cuando tengas la foto, reemplazá el bloque siguiente por una etiqueta img. -->
+        <div class="photo-placeholder">
+          <p>Ne:RD: nuevas expresiones digitales</p>
+          <p>Espacio reservado para la fotografía del festival</p>
+        </div>
+
+        <figcaption class="article-img-caption">
+          Ne:RD reunió propuestas artísticas que exploraron el cruce entre tecnología, sonido e imagen.
+          <!-- Agregar el crédito de la fotografía antes de publicar. -->
+        </figcaption>
+      </figure>
+
+      <div class="article-body">
+
+        <p>
+          Rosario fue sede de una nueva edición de Ne:RD (Nuevas Expresiones: Rosario Digital), un festival dedicado a explorar las posibilidades creativas de las tecnologías digitales, la electrónica y la inteligencia artificial. La propuesta, organizada por la Municipalidad de Rosario a través del Centro de Expresiones Contemporáneas (CEC), se desarrolló del viernes 2 al domingo 4 de octubre.
+        </p>
+
+        <p>
+          Durante las tres jornadas, el Centro de Expresiones Contemporáneas, ubicado en Paseo de las Artes y el río, y el Complejo Astronómico Municipal (CAM), en avenida Diario La Capital 1602, fueron los escenarios de instalaciones interactivas, workshops, charlas, shows y performances audiovisuales. La programación también incluyó proyecciones inmersivas en formato fulldome y presentaciones de DJs y VJs en vivo.
+        </p>
+
+        <h2>Un encuentro entre arte y tecnología</h2>
+
+        <p>
+          Bajo el nombre Ne:RD, el festival reunió proyectos emergentes y laboratorios creativos de artistas de Rosario, de otras partes del país y del exterior, a partir de una convocatoria internacional. El encuentro propuso un espacio para el desarrollo de ideas, la experimentación y el intercambio entre profesionales de distintas disciplinas.
+        </p>
+
+        <p>
+          Una de las características centrales de la propuesta fueron las experiencias interactivas, en las que el público podía activar las obras y participar de ellas. A través de recursos de arte digital e inteligencia artificial, las instalaciones exploraron nuevas formas de vincular las herramientas tecnológicas cotidianas con los sentidos y la experiencia humana.
+        </p>
+
+        <h2>Charlas, workshops y música en vivo</h2>
+
+        <p>
+          La programación comenzó el viernes 2 de octubre en el CEC con la proyección de trabajos de estudiantes del Taller de Diseño Gráfico II, de la cátedra Marull de la Licenciatura en Diseño Gráfico de la Universidad Nacional de Rosario. Esa misma jornada se realizó la apertura oficial y hubo DJ sets a cargo de Lauphan, Cele Faini, Dani Pérez y Fran Castells.
+        </p>
+
+        <p>
+          El sábado 3, el público pudo participar del workshop “Algoritmos Performáticos”, a cargo de Esteparia, con inscripción previa. La jornada también incluyó charlas de Fernando Molina y Mauro Barreca, además de proyecciones en formato fulldome. Entre los trabajos seleccionados estuvieron “Días y Flores”, de Agostina Ercoli, y “Ensoñaciones Híbridas”, de Lisandro Bauk, ambos de Rosario.
+        </p>
+
+        <p>
+          El domingo 4, último día del festival, continuaron las instalaciones interactivas y las actividades abiertas al público en el CEC. Entre las charlas previstas para la jornada estuvieron “Oficios en la escena Ne:RD”, con Mafer Weber, y “Del prototipo a la sala: cómo se diseñan instalaciones interactivas que juega el público”, a cargo de Tolch.
+        </p>
+
+        <h2>La creatividad como experiencia compartida</h2>
+
+        <p>
+          Con propuestas destinadas a todas las edades y entrada gratuita, Ne:RD acercó al público distintas maneras de explorar la relación entre arte y tecnología. La programación combinó instancias de formación e intercambio profesional con experiencias participativas, música y producciones audiovisuales.
+        </p>
+
+        <p>
+          La iniciativa también contó con propuestas de formación y performances visuales y sonoras de 01 Estudio. De este modo, el festival ofreció un espacio para conocer proyectos creativos y experimentar con lenguajes digitales en escenarios culturales de la ciudad.
+        </p>
+
+        <aside class="agenda-card" aria-label="Datos del festival">
+          <h2>El festival, en datos</h2>
+          <p><strong>Nombre:</strong> Ne:RD (Nuevas Expresiones: Rosario Digital).</p>
+          <p><strong>Edición:</strong> tercera edición.</p>
+          <p><strong>Fechas:</strong> del 2 al 4 de octubre de 2026.</p>
+          <p><strong>Sedes:</strong> Centro de Expresiones Contemporáneas y Complejo Astronómico Municipal.</p>
+          <p><strong>Organización:</strong> Municipalidad de Rosario, a través del CEC.</p>
+          <p><strong>Entrada:</strong> gratuita, con QR obtenido en la página municipal, según la información difundida para el evento.</p>
+        </aside>
+
+        <a class="back-link" href="../index.html">
+          ← Volver a Radar Rosarino
+        </a>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <p>© 2026 RADAR ROSARINO</p>
+      <p>Cultura · Ciudad · Comunidad</p>
+    </div>
+  </footer>
+
+</body>
+</html>
