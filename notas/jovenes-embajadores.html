@@ -1,184 +1,70 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="OAJNU llevó su propuesta de Modelo de Naciones Unidas a Rosario, con la participación de jóvenes de escuelas secundarias.">
+  <meta name="theme-color" content="#FAFAFC">
+
   <title>Jóvenes embajadores: la propuesta de OAJNU en Rosario | Radar Rosarino</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: #f7f6f2;
-      color: #252525;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.75;
-    }
-
-    header {
-      padding: 22px 20px;
-      background: #172b25;
-      color: white;
-      text-align: center;
-    }
-
-    header a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .brand {
-      margin: 0;
-      font-size: 30px;
-      font-weight: 800;
-      letter-spacing: 1px;
-    }
-
-    .brand-subtitle {
-      margin: 0;
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    main {
-      width: min(850px, 92%);
-      margin: 40px auto;
-      padding: 35px;
-      background: white;
-      border-radius: 10px;
-    }
-
-    .category {
-      color: #55765e;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin: 12px 0;
-      font-size: clamp(32px, 5vw, 46px);
-      line-height: 1.15;
-    }
-
-    .subtitle {
-      color: #626262;
-      font-size: 19px;
-      line-height: 1.5;
-    }
-
-    .byline {
-      margin: 22px 0;
-      color: #666;
-      font-size: 13px;
-    }
-
-    figure {
-      margin: 25px 0;
-    }
-
-    .photo-placeholder {
-      display: flex;
-      min-height: 230px;
-      padding: 25px;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: #e9e9e4;
-      color: #555;
-      text-align: center;
-    }
-
-    figcaption {
-      margin-top: 8px;
-      color: #777;
-      font-size: 12px;
-    }
-
-    .article-body p {
-      margin: 0 0 22px;
-      font-size: 17px;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-top: 20px;
-      color: #315b43;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .back-link:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      padding: 25px;
-      background: #172b25;
-      color: white;
-      font-size: 13px;
-      text-align: center;
-    }
-
-    @media (max-width: 600px) {
-      main {
-        margin: 20px auto;
-        padding: 22px;
-      }
-
-      .article-body p {
-        font-size: 16px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-  <header>
-    <a href="../index.html">
-      <p class="brand">RADAR ROSARINO</p>
-      <p class="brand-subtitle">La ciudad, en foco</p>
-    </a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-text">RADAR ROSARINO</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="../secciones/agenda.html">Agenda</a>
+        <a href="../secciones/coberturas.html">Coberturas</a>
+        <a href="../secciones/deportes.html">Deportes</a>
+        <a href="../quienes-somos.html">Quiénes somos</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <img
-  src="oajnu.jpg"
-  alt="Jóvenes participando del Modelo de Naciones Unidas de OAJNU en Rosario"
-  style="width: 100%; max-height: 450px; object-fit: cover; border-radius: 8px; margin-bottom: 25px;"
->
-    <article>
-      <span class="category">COBERTURAS · EDUCACIÓN</span>
+  <main class="container main-content">
 
-      <h1>Jóvenes embajadores: la propuesta de OAJNU presente en Rosario</h1>
+    <article class="article-single">
 
-      <p class="subtitle">
-        La Universidad Católica Argentina y la Universidad del Centro Educativo
-        Latinoamericano recibieron a estudiantes secundarios para participar
-        de una experiencia de diplomacia y debate internacional.
-      </p>
+      <div class="article-header">
+        <span class="badge">COBERTURAS · EDUCACIÓN</span>
 
-      <div class="byline">
-        Por <strong>Victoria Morelli</strong> ·
-        <time datetime="2026-10-20">20 de octubre de 2026</time>
+        <h1 class="article-single-title">
+          Jóvenes embajadores: la propuesta de OAJNU presente en Rosario
+        </h1>
+
+        <p class="article-single-lead">
+          La Universidad Católica Argentina y la Universidad del Centro Educativo
+          Latinoamericano recibieron a estudiantes secundarios para participar
+          de una experiencia de diplomacia y debate internacional.
+        </p>
+
+        <p class="article-meta">
+          Por <strong>Victoria Morelli</strong> ·
+          <time datetime="2026-10-20">20 de octubre de 2026</time>
+        </p>
       </div>
 
-      <figure>
-        
-        <figcaption>
-          Estudiantes secundarios participaron de una experiencia de debate
-          y representación diplomática.
+      <figure class="article-img-box">
+        <img
+          src="oajnu.jpg"
+          alt="Jóvenes participando del Modelo de Naciones Unidas de OAJNU en Rosario"
+          style="width: 100%; height: auto; max-height: 450px; object-fit: cover;"
+        >
+        <figcaption class="article-img-caption">
+          Estudiantes secundarios participaron de una experiencia de debate y representación diplomática.
         </figcaption>
       </figure>
 
       <div class="article-body">
+
         <p>
           La posibilidad de que los adolescentes se conviertan en representantes
           de un país se hizo realidad en Rosario. Los días 2, 3 y 4 de octubre,
@@ -233,16 +119,29 @@
           a involucrarse en los asuntos globales y a descubrir el valor del
           diálogo, la investigación y la participación.
         </p>
+
       </div>
 
       <a class="back-link" href="../index.html">
         ← Volver a Radar Rosarino
       </a>
+
     </article>
+
   </main>
 
-  <footer>
-    Radar Rosarino · Cultura, actualidad y vida local
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <p class="footer-logo">RADAR ROSARINO</p>
+        <p>Cultura · Ciudad · Comunidad</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 RADAR ROSARINO</p>
+    </div>
   </footer>
+
 </body>
 </html>
