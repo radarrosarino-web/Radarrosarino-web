@@ -1,253 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Microteatro en Rosario: obras de quince minutos, salas íntimas y una propuesta diferente para disfrutar del teatro local.">
+  <meta name="theme-color" content="#FAFAFC">
+
   <title>Microteatro: solo existen quince y uno está en Rosario | Radar Rosarino</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f5f0;
-      color: #202020;
-      line-height: 1.7;
-    }
-
-    header {
-      background: #171717;
-      color: white;
-      padding: 28px 7%;
-    }
-
-    .logo {
-      color: white;
-      text-decoration: none;
-      font-size: 30px;
-      font-weight: bold;
-      letter-spacing: -1px;
-    }
-
-    .logo span {
-      color: #e94b35;
-    }
-
-    header p {
-      margin-bottom: 0;
-      color: #ddd;
-    }
-
-    nav {
-      background: white;
-      padding: 15px 7%;
-      border-bottom: 1px solid #ddd;
-    }
-
-    nav a {
-      color: #222;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 22px;
-      font-size: 14px;
-    }
-
-    main {
-      max-width: 850px;
-      margin: 40px auto;
-      padding: 0 22px;
-    }
-
-    .category {
-      color: #e94b35;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 1.5px;
-    }
-
-    h1 {
-      font-size: 42px;
-      line-height: 1.15;
-      margin: 14px 0 18px;
-    }
-
-    .subtitle {
-      color: #555;
-      font-size: 20px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-
-    .byline {
-      color: #777;
-      font-size: 13px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 20px;
-      margin-bottom: 25px;
-    }
-
-    .article-image {
-      width: 100%;
-      max-height: 470px;
-      object-fit: cover;
-      border-radius: 7px;
-      margin-bottom: 10px;
-    }
-
-    .image-caption {
-      color: #777;
-      font-size: 12px;
-      margin: 0 0 28px;
-    }
-
-    .article-body p {
-      font-size: 18px;
-      margin: 0 0 22px;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-top: 25px;
-      color: #e94b35;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      margin-top: 60px;
-      padding: 25px;
-      text-align: center;
-      background: #171717;
-      color: white;
-      font-size: 13px;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 32px;
-      }
-
-      .subtitle {
-        font-size: 18px;
-      }
-
-      .article-body p {
-        font-size: 17px;
-      }
-
-      nav a {
-        display: inline-block;
-        margin-bottom: 8px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
 
-  <header>
-    <a class="logo" href="../index.html">RADAR <span>ROSARINO</span></a>
-    <p>Las historias de nuestra ciudad, más cerca.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-text">RADAR ROSARINO</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="../secciones/agenda.html">Agenda</a>
+        <a href="../secciones/coberturas.html">Coberturas</a>
+        <a href="../secciones/deportes.html">Deportes</a>
+        <a href="../quienes-somos.html">Quiénes somos</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="../index.html">INICIO</a>
-    <a href="../secciones/coberturas.html">RESEÑAS Y COBERTURAS</a>
-  </nav>
+  <main class="container main-content">
 
-  <main>
-    <span class="category">CULTURA · RESEÑAS Y COBERTURAS</span>
+    <article class="article-single">
 
-    <h1>Microteatro: solo existen quince y uno está en Rosario</h1>
+      <div class="article-header">
+        <span class="badge">CULTURA · RESEÑAS Y COBERTURAS</span>
 
-    <p class="subtitle">
-      Con una fórmula de 15, 15, 15, una antigua edificación de calle
-      San Lorenzo sorprende y atrae a un nuevo público.
-    </p>
+        <h1 class="article-single-title">
+          Microteatro: solo existen quince y uno está en Rosario
+        </h1>
 
-    <p class="byline">Por Victoria Morelli · 20 de octubre de 2026</p>
+        <p class="article-single-lead">
+          Con una fórmula de 15, 15, 15, una antigua edificación de calle
+          San Lorenzo sorprende y atrae a un nuevo público.
+        </p>
 
-    <img
-      class="article-image"
-      src="microteatro.jpg"
-      alt="Espacio de Microteatro en Rosario"
-      onerror="this.style.display='none'"
-    >
+        <p class="article-meta">
+          Por <strong>Victoria Morelli</strong> ·
+          <time datetime="2026-10-20">20 de octubre de 2026</time>
+        </p>
+      </div>
 
-    <p class="image-caption">
-      Microteatro propone una experiencia teatral íntima y diferente.
-    </p>
+      <figure class="article-img-box">
+        <img
+          src="microteatro.jpg"
+          alt="Espacio de Microteatro en Rosario"
+          style="width: 100%; height: auto; max-height: 470px; object-fit: cover;"
+        >
+        <figcaption class="article-img-caption">
+          Microteatro propone una experiencia teatral íntima y diferente.
+        </figcaption>
+      </figure>
 
-    <article class="article-body">
+      <div class="article-body">
 
-      <p>
-        Una propuesta de salida nocturna diferente y disruptiva: obras de
-        quince minutos, salas de quince metros cuadrados y capacidad para
-        quince personas. Esa es la dinámica que define a Microteatro.
-      </p>
+        <p>
+          Una propuesta de salida nocturna diferente y disruptiva: obras de
+          quince minutos, salas de quince metros cuadrados y capacidad para
+          quince personas. Esa es la dinámica que define a Microteatro.
+        </p>
 
-      <p>
-        Su historia comenzó en 2009, en España, de la mano de Miguel
-        Alcantud. En las habitaciones de un prostíbulo que estaba a punto
-        de ser demolido, dramaturgos, artistas y actores comenzaron a
-        presentar sus obras en un formato breve e íntimo.
-      </p>
+        <p>
+          Su historia comenzó en 2009, en España, de la mano de Miguel
+          Alcantud. En las habitaciones de un prostíbulo que estaba a punto
+          de ser demolido, dramaturgos, artistas y actores comenzaron a
+          presentar sus obras en un formato breve e íntimo.
+        </p>
 
-      <p>
-        En 2013, la propuesta llegó a Rosario por iniciativa de Fernández
-        Moreno, productor de teatro independiente y gestor cultural con
-        una amplia trayectoria en la ciudad.
-      </p>
+        <p>
+          En 2013, la propuesta llegó a Rosario por iniciativa de Fernández
+          Moreno, productor de teatro independiente y gestor cultural con
+          una amplia trayectoria en la ciudad.
+        </p>
 
-      <p>
-        La pandemia se convirtió en un contexto clave para su consolidación.
-        Con las salas cerradas y la actividad teatral en pausa, Moreno
-        retomó aquella idea y avanzó con las gestiones para obtener la
-        licencia oficial del formato.
-      </p>
+        <p>
+          La pandemia se convirtió en un contexto clave para su consolidación.
+          Con las salas cerradas y la actividad teatral en pausa, Moreno
+          retomó aquella idea y avanzó con las gestiones para obtener la
+          licencia oficial del formato.
+        </p>
 
-      <p>
-        La cercanía con los actores permite apreciar cada gesto y expresión
-        en detalle, con entradas a precios accesibles. El arte local se
-        reivindica en cada rincón del lugar. Las luces tenues se alejan de
-        la solemnidad de una sala tradicional: el espacio se llena de
-        sonidos, movimiento y risas, mientras un bar invita al público a
-        disfrutar tanto de las obras como de la propuesta gastronómica.
-      </p>
+        <p>
+          La cercanía con los actores permite apreciar cada gesto y expresión
+          en detalle, con entradas a precios accesibles. El arte local se
+          reivindica en cada rincón del lugar. Las luces tenues se alejan de
+          la solemnidad de una sala tradicional: el espacio se llena de
+          sonidos, movimiento y risas, mientras un bar invita al público a
+          disfrutar tanto de las obras como de la propuesta gastronómica.
+        </p>
 
-      <p>
-        Inicio, desarrollo y desenlace se articulan para ofrecer una obra
-        completa en apenas quince minutos. La temática, además, se renueva
-        todos los meses.
-      </p>
+        <p>
+          Inicio, desarrollo y desenlace se articulan para ofrecer una obra
+          completa en apenas quince minutos. La temática, además, se renueva
+          todos los meses.
+        </p>
 
-      <p>
-        Las ocho obras que integran la cartelera cambian bajo una temática
-        común, que funciona como una hoja en blanco para que dramaturgos,
-        directores y actores desarrollen sus propias propuestas. Así,
-        Microteatro invita a quienes ya asistieron a regresar y descubrir
-        nuevas historias.
-      </p>
+        <p>
+          Las ocho obras que integran la cartelera cambian bajo una temática
+          común, que funciona como una hoja en blanco para que dramaturgos,
+          directores y actores desarrollen sus propias propuestas. Así,
+          Microteatro invita a quienes ya asistieron a regresar y descubrir
+          nuevas historias.
+        </p>
 
-      <p>
-        De esta manera, el espacio propone disfrutar del trabajo de artistas
-        locales y vivir una experiencia teatral íntima, innovadora y
-        diferente.
-      </p>
+        <p>
+          De esta manera, el espacio propone disfrutar del trabajo de artistas
+          locales y vivir una experiencia teatral íntima, innovadora y
+          diferente.
+        </p>
+
+      </div>
+
+      <a class="back-link" href="../secciones/coberturas.html">
+        ← Volver a Reseñas y Coberturas
+      </a>
 
     </article>
 
-    <a class="back-link" href="../secciones/coberturas.html">
-      ← Volver a Reseñas y Coberturas
-    </a>
   </main>
 
-  <footer>
-    © Radar Rosarino · Periodismo local
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <p class="footer-logo">RADAR ROSARINO</p>
+        <p>Cultura · Ciudad · Comunidad</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 RADAR ROSARINO</p>
+    </div>
   </footer>
 
 </body>
