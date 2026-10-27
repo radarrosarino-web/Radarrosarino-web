@@ -279,8 +279,10 @@ a:focus-visible, button:focus-visible {
   gap: 1.5rem;
 }
 
+
 .article-card-horizontal {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
